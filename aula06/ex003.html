@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: blue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1{
+            color: rgb(255, 239, 15);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Me livrei da maldição!</p>
+    <script>
+        var primeiro = Number.parseInt(window.prompt("Digite o primeiro número:")) // o prompt sempre retorna uma string, mesmo que seja um número. Por isso, precisamos converter a string para um número usando a função Number()
+
+        var segundo = Number.parseInt(window.prompt("Digite o segundo número:")) // o prompt sempre retorna uma string, mesmo que seja um número. Por isso, precisamos converter a string para um número usando a função Number()
+
+        // É possivel utilizar somente o Number!
+
+        var soma = primeiro + segundo
+        window.alert(`A soma entre ${primeiro} e ${segundo} é igual a ${soma}`) // o Simbolo de + tem duas funcões. Ele pode ser usado para concatenar ou para somar.
+
+        /* Uma maneira melhor de concatenar é usando template string. Para isso, basta usar crase ` e colocar a variavel dentro de ${}
+        exemplo  = `A soma dos números é: ${soma}` */
+        // É a mesma logica do .format do python, a diferença é a ` ` que precisa estar no lugar das aspas duplas ou simples e o $ que vem antes do {} para colocar a variavel dentro da string. EX: '  ${VARIAVEL} '
+
+    </script>
+</body>
+</html>
